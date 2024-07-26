@@ -1,8 +1,8 @@
 {
+  "homepage": "https://sangnguyen288.github.io/eproject-group-6",
   "name": "d01",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Trannie.github.io/eproject-g6",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

@@ -2,30 +2,35 @@ import { FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import './Footer.css'
 
 export default function Footer() {
-const clickMe = () => {
-    alert("Thank you for subscribing to our newsletter!");
-}
+    const clickMe = () => {
+        alert("Thank you for subscribing to our newsletter!");
+    }
 
     return (
         <div>
 
-            <div className="footer">
+            <div className="row form-footer">
+                <div className="col-md-4">
+                    <FaEnvelope style={{ fontSize: "30px" }} />
+                    <span>SIGN UP FOR NEWSLETTER</span>
+                </div>
 
-                <div className="footer-top">
-                    <div className="footer-title-icon"><FaEnvelope style={{fontSize:"30px"}} /> <h4>SIGN UP FOR NEWSLETTER</h4>
 
-                        <form action='...' className="form-item">
-                            <input type="email" placeholder="Email" size="50" required pattern="^[a-zA-Z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$" />
-                            <button type="submit" className="btn btn-outline-success" onClick={(clickMe)} > subscribe! </button>
-                        </form>
+                <div className="col-md-4">
 
-                    </div>
+                    <input className="input" type="email" placeholder="Email" required pattern="^[a-zA-Z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$" />
+                </div>
+                <div className="col-md-4">
+                    <button type="submit" className="btn btn-outline-success" onClick={(clickMe)} > subscribe! </button>
+
                 </div>
 
             </div>
 
+
+
             <footer className="row App-footer">
-                <div className="col-md-5 About-footer">
+                <div className="col-md-4 About-footer">
                     <h5>About us:</h5>
                     <p> BidSpirit Online MarketPlace<br />
                         is a comprehensive <br />
@@ -36,7 +41,7 @@ const clickMe = () => {
                     </p>
                 </div>
 
-                <div className="col-md-5 Contact-footer">
+                <div className="col-md-4 Contact-footer">
                     <h5> Contact Us:</h5>
                     📌  : 590 Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh city<br />
                     ☎️  : 028 7300 8866<br />
@@ -44,7 +49,7 @@ const clickMe = () => {
                     💌  : info@gmail.com
                 </div>
 
-                <div className="col-md-2 Connect-footer">
+                <div className="col-md-4 Connect-footer">
                     <h5> Follow us : </h5> <br />
                     <div className="icon-link">
                         <div className="icon">
@@ -66,7 +71,7 @@ const clickMe = () => {
                 <hr />
                 <h6 style={{ textAlign: "center" }}>Copyright © 2024 Team 6 FPT-APTECH</h6>
             </footer>
-        </div>
+        </div >
 
     );
 }

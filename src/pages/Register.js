@@ -9,7 +9,7 @@ export default function Register() {
 
             <div className="register">
                 <h2> REGISTER</h2>
-                <form className="mt-3">
+                <form className="mt-3" method="post">
 
                     <div className="mt-3">
                         <label for="name" className="form-label">UseName:</label>

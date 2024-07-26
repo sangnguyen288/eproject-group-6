@@ -1,15 +1,14 @@
-import { useNavigate } from "react-router-dom";
-
 export default function Search() {
-    const clickMe = () =>{
-        alert("Sorry ! The Information You Are Looking For Has Not Been Updated !!!");
+    function search(formData) {
+        const query = formData.get("query");
+        alert(`You searched for '${query}'`);
     }
     return (
-        <div>
-            <form className="d-flex" style={{ width: "40%", marginLeft: "30%" }}>
-                <input className="form-control me-2" type="search" id="search" name="search" placeholder="Search" required/>
-                <button className="btn btn-outline-success" required type="submit" onClick={(clickMe)} >Search</button>
-            </form>
+        <div className="search">
+        <form className="d-flex" action={search} style={{ width: "40%", marginLeft: "30%" }}>
+            <input name="query" placeholder="search" style={{marginRight: "15px"}}/>
+            <button type="submit" className="btn btn-outline-success">Search</button>
+        </form>
         </div>
     );
 }

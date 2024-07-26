@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <img src={url+"/images/logo.jpg"} alt='logo' className="logo" /> 
+        <img src={url + "/images/logo.jpg"} alt='logo' className="logo" />
         <h1>BidSpirit Online MarketPlace</h1>
         <div>
           <ul className="navbar">
@@ -72,10 +72,10 @@ function App() {
             <li><Link to="/contactus">ContactUs</Link></li>
           </ul>
 
-            <form className="d-flex" style={{ width: "40%", marginLeft: "30%", textDecoration: "none" }}>
-            <button className="dgrid"><Link to="/login">Login</Link></button>
-            <button className="dgrid"><Link to="/register">Register</Link></button>
-          </form> 
+          <div className="signup">
+            <button className='btn btn-outline-success'><Link to="/login">Login</Link></button>
+            <button className='btn btn-outline-success'><Link to="/register">Register</Link></button>
+          </div>
         </div>
       </nav>
 
@@ -88,10 +88,9 @@ function App() {
           <li><Link to="/fineart" class="dropdown-item" >FineArt</Link></li>
           <li><Link to="/aboutus" class="dropdown-item">Aboutus</Link></li>
           <li><Link to="/contactus" class="dropdown-item" >Contactus</Link></li>
-
         </ul>
-     
-        <Search/>
+
+        <Search />
 
       </div>
 
@@ -148,6 +147,7 @@ function App() {
         <Route path='/articleart' element={<ArticleArt />} />
         <Route path='/articlerich' element={<ArticleRich />} />
         <Route path='/articlecartier' element={<ArticleCartier />} />
+        <Route path="*" element={<Home />} />
 
       </Routes>
 

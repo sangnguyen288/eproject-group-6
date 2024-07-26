@@ -1,6 +1,5 @@
 .App {
   font-family: sans-serif;
-  background-color: #dfeaec;
   width: 100%;
   height: auto;
 }
@@ -10,12 +9,10 @@
     padding-bottom: 18px !important;
   }
 }
-
-.head div {
-  background-color: #dfeaec;
-  text-decoration: none;
+.search{
+  width: 80%;
+  margin-left: 15%;
 }
-
 .fur {
   width: 50%;
   margin-left: 25%;
@@ -282,4 +279,19 @@ h3 {
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 20px;
   padding: 0 5rem 0 7rem;
+}
+
+.signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup button{
+  margin: 10px;
+}
+.signup a{
+  color: #dfeaec;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "SFP-Regular";
 }

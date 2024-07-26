@@ -46,9 +46,7 @@ export default function Home() {
                             <span className="text-uppercase">Consign with Team6</span>
                             <p>Would you like to sell your antiques or collectibles hassle-free and for the best price? Go with BidSpirit MarketPlace, the fastest-growing auction house in the FPT.</p>
                             <Link to="/antiques">How to sell</Link>
-                        </div>
-                        <div className="col-md-5 first-how-to-sell-img">
-                            <img src={url+"/images/gavel.jpeg"} alt="gavel"/>
+                            <img src={url+"/images/gavel.jpeg"} alt="gavel" className="gavel"/>
                         </div>
                     </div>
                 </div>

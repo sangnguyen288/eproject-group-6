@@ -4,33 +4,27 @@
     padding: 15px;
     justify-content: center;
 }
-h4{
-    margin-left: 10px;
-    margin-right: 20px;
+.form-footer span{
+   font-size: 24px;
 }
-.form-item{
-    display: flex;
-    float:inline-end;
+.form-footer{
+    padding: 3rem ;
+
 }
-.form-item button{
-    margin-left: 15px;
-}
-.footer {
-    width: 100%;
-    height: fit-content;
-    margin-top: 5vw;
-    box-shadow: #1b2430 15px;
+
+.input{
+    width: 30vw;
 }
 
 .App-footer {
-    padding-left: 1%;
+    padding-left: 3rem;
     padding-top: 2vw;
     background-color: #1b2430;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "SFP-Regular";
 }
 
 .icon {
     padding-right: 10px;
-    font-size: xx-large;
+    font-size: 35px;
 }
