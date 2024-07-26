@@ -17,10 +17,6 @@ Project title: BidSpirit Online MarketPlace
          Nguyen Ngoc Tran           Student1559718
 ============================
 
-eProject code at https://github.com/sangnguyen288/eproject-group-6
-
-============================
-
 eProject documentation at https://github.com/sangnguyen288/eproject-group-6/tree/main/report
 
 ============================
