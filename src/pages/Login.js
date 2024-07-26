@@ -1,32 +1,80 @@
-import { useNavigate } from 'react-router-dom';
-import './Login.css'
+import { useState } from 'react';
+ export default function Login() {
+  const clickMe = () => {
+    alert ("Logged In Successfully !!!");
+  }
 
-export default function Login() {
-    const navigate = useNavigate("");
-    const clickMe = () => {
-         alert("Loged In Successfully !!!")
-     }
+    const [formData, setFormData] = useState({
+        username: '',
+        password: ''
+      });
+
+    
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value
+        }));
+    };  
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    
+        // Perform login logic here
+        console.log('username:', formData.username);
+        console.log('Password:', formData.password);
+
+        setFormData({
+            username: '',
+            password: ''
+          });
+      };
+    
     return (
-        <div className="login">
-            <h2> LOGIN </h2>
-            <form className="mt-3" method='post'>
+    
+    <div className= "container mt-4">
+        <div className="row">
+            <div className="col-md-8 col-12 offset-2">
+                <div className="card">
+                  <h4 className="card-header">Login</h4>
+                  <div className="card-body">
+                    <form onSubmit={handleSubmit}>
+                      
+                      <div className="mb-3">
+                        <label for="username" className="form-label">Username</label>
+                        <input 
+                        type="text"  
+                        name="username" 
+                        value={formData.username}
+                        onChange={handleChange}
+                        className="form-control" 
+                        id="username" 
+                        aria-describedby="usernameHelp" />
+                      
+                      </div>
+                       
 
-                <div className="mt-3">
-                    <label for="email" className="form-label">Email:</label>
-                    <input type="email" className="form-control" id="email" placeholder="email" name="email" required />
+                      <div className="mb-3">
+                        <label for="pwd" className="form-label">Password</label>
+                        <input 
+                        type="password" 
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        className="form-control" 
+                        id="pwd"/>
+                      </div>
+                     
+                      <button type="submit" onClick={(clickMe)} className="btn btn-outline-success">Login</button>
+                    </form>
+
+                  </div>
+
+
                 </div>
 
-                <div className="mt-3">
-                    <label for="password" className="form-label">Password:</label>
-                    <input type="password" className="form-control" id="password" placeholder="password" name="password" required />
-                </div>
-
-                <div className="mt-3">
-                    <button type="submit" className="btn btn-outline-success" onClick={(clickMe)}> Login </button>
-                </div>
-
-            </form>
-
+            </div>
         </div>
-    );
-} 
+    </div>
+  );
+}
