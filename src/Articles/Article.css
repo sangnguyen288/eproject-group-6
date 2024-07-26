@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.article-item img{
+    width: 50%;
+    margin-left: 10%;
+}
+.article-content-center{
+    text-align: center;
+}
+.article-content{
+    text-transform:capitalize;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}

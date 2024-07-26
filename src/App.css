@@ -1,0 +1,285 @@
+.App {
+  font-family: sans-serif;
+  background-color: #dfeaec;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 615px) and (max-width: 1200px) {
+  .pb-md-18 {
+    padding-bottom: 18px !important;
+  }
+}
+
+.head div {
+  background-color: #dfeaec;
+  text-decoration: none;
+}
+
+.fur {
+  width: 50%;
+  margin-left: 25%;
+}
+
+#fur {
+  margin-left: 70vw;
+}
+
+.fine img {
+  width: 30%;
+  margin-top: 2vw;
+  margin-left: 10vw;
+}
+
+.fineart img {
+  width: 20%;
+  margin-top: 2vw;
+  margin-left: 10vw;
+}
+
+.fineart button {
+  margin-left: 85vw;
+}
+
+.picture {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  margin: 2vw;
+  gap: 2vw;
+}
+
+.card button {
+  text-align: center;
+  background-color: #1b2430;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.picture :hover {
+  background-color: #dfeaec;
+}
+
+.information button {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: large;
+  color: #1b2430;
+  background-color: rgb(234, 238, 238);
+
+}
+
+.details button {
+  margin-left: 90%;
+}
+
+.details img {
+  width: 25%;
+  margin-left: 5vw;
+  margin-top: 2vw;
+}
+
+.information {
+  margin: 2vw 10vw 2vw 10vw;
+}
+
+.information p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  fill: none;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b2430;
+  padding: 20px 80px;
+  box-shadow: 0px 5px 15px #1b2430;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar>li {
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.navbar>li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: #eaeef4;
+  transition: 0.2s ease-in-out;
+
+}
+
+.navbar>li a:hover {
+  color: #076e81;
+}
+
+.navbar>li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #076e81;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.dgrid a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #1b2430;
+}
+
+.dgrid {
+  margin: 1.2rem;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #dfeaec;
+}
+
+.dgrid a:hover {
+  color: #076e81;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  padding-right: 20px;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #076e81;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 50vw;
+  height: 50vh;
+  gap: 20px;
+
+}
+
+.flex-item {
+  align-items: stretch;
+  padding-left: 10%;
+
+}
+
+.profile {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+}
+
+.profile p {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #1b2430;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.profile img {
+  width: 60%;
+  margin-left: 10vw;
+  box-shadow: #1b2430 15px 15px 15px 15px;
+}
+
+
+.aboutus {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  margin: 5vw 1vw 0vw 1vw;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.aboutus img {
+  width: 100%;
+  height: 75%;
+}
+
+.aboutus p {
+  color: #1b2430;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+}
+
+.aboutus p:hover {
+  color: #076e81;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+}
+
+.blog-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 20px;
+  padding: 0 3rem 3rem 3rem;
+}
+
+.blog-title {
+  font-size: 24px;
+  font-family: "SFP-Regular";
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #076e81;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5rem;
+}
+
+.articles-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 20px;
+  padding: 0 5rem 0 7rem;
+}

@@ -1,0 +1,36 @@
+.footer-title-icon{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+}
+h4{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.form-item{
+    display: flex;
+    float:inline-end;
+}
+.form-item button{
+    margin-left: 15px;
+}
+.footer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5vw;
+    box-shadow: #1b2430 15px;
+}
+
+.App-footer {
+    padding-left: 1%;
+    padding-top: 2vw;
+    background-color: #1b2430;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icon {
+    padding-right: 10px;
+    font-size: xx-large;
+}

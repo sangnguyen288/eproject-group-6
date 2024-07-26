@@ -1,0 +1,89 @@
+.home-item {
+    margin-top: 2vw;
+}
+.home-container{
+    width: 100%;
+    height: auto;
+}
+.home-container div {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.container-sell {
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.first-how-to-sell {
+    width: 50%;
+    color: white;
+    background: #1b2430;
+    padding: 30px;
+}
+
+.first-how-to-sell span {
+    font-size: 36px;
+    font-family: "SFP-Regular";
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.first-how-to-sell p {
+    font-size: 24px;
+    font-family: "SFP-Regular";
+    line-height: 45px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.first-how-to-sell a {
+    font-size: 24px;
+    font-family: "SFP-Regular";
+    font-weight: 200;
+    color: white;
+    padding: 10px 50px;
+    border: 1px solid;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    /* background-color: transparent; */
+}
+
+.first-how-to-sell-img {
+    width: 50%;
+    height: fit-content;
+    background-size: cover;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+}
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.blog-summary {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
